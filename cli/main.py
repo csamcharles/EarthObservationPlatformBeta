@@ -8,13 +8,14 @@ api_post = 'http://localhost:8080/api/submit-alg' if local else 'aws.com'
 
 print("Please enter the path to your algorithm: ")
 
-file = input()
+#file = input()
+path = 'test.txt'
 
-if os.path.isfile(file):
+if os.path.isfile(path):
     print("Sending your algorithm to the cloud...")
-    with open(file, 'rb') as f:
-        response = requests.post(api_post, files={file: f})
-        print(response)
+    file = {'algorithm': open(path, 'rb')}
+    response = requests.post(api_post, files=file)
+    print(response)
 else:
     print("Error! this is not a valid file.")
     exit()

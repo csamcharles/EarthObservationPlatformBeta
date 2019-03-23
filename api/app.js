@@ -12,8 +12,8 @@ app.post('/api/submit-alg', (req, res) => {
     if (Object.keys(req.files).length == 0) {
         return res.status(400).send('No files were uploaded.');
     }
-
-    let newAlg = req.files.newAlg
+    console.log(req.files);
+    let newAlg = req.files.algorithm;
     newAlg.mv(`./db/${newAlg.name}`, function (err) {
         if (err)
             return res.status(500).send(err);
