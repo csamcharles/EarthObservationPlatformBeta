@@ -1,6 +1,7 @@
 import os.path
 import requests
 
+#To run with AWS lightsail, set to False
 local = False
 
 # put the hosted endpoint here
