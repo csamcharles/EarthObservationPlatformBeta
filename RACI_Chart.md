@@ -1,5 +1,5 @@
 # RACI Chart For Project Completetion
-Team Name: Argonauts
+Team Name: Argonauts   
 Group Members: Sam Charles, Conor Butte-Landsfried, Michael Baart
 
 **R = Resposible, A = Accountable, C = Consulted, I = Informed**
