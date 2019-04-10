@@ -25,3 +25,5 @@ app.post('/api/submit-alg', (req, res) => {
 app.listen(PORT, () => {
     console.log(`server listening on port ${PORT}`)
 })
+
+module.exports = app
