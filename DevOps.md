@@ -5,6 +5,7 @@ Group Members: Sam Charles, Conor Butte-Landsfried, Michael Baart
 *This document outlines the devOps tools used when creating the Earth Observation Plarform Beta and how these tools ease maintenance and evolution.*
 
 ## Travis CI 
+
 <img src="https://travis-ci.com/images/logos/Tessa-1.png" width="250" align="right"/>
 
 [Travis CI] offers continuous integration and deployment for projects hosted on github. Configuration is notably simple, with the steps for integration with an existing project outlined [here](https://docs.travis-ci.com/user/tutorial/).   
@@ -17,10 +18,6 @@ Travis also lets us deploy to AWS for production, and when are project would rea
 
 
 ## Github
-![image alt <](https://image.flaticon.com/icons/svg/25/25231.svg)
-Even though github it one of the most commonly used tools (so much that it almost doesn't feel like it), it is still one of the most powerful DevOps tools around. Git hub allows for excellent file tracking, revision history, conflict resolution, and project storage and hosting. 
-
-## Mocha
 
 <img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="250" align="left"/>  
 
