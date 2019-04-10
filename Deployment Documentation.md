@@ -8,10 +8,22 @@ Currently, the EOPbeta provides a means for users to have files processed throug
 
 ### Requirements
 
-Using the EOPbeta is straight forward and painless as the majority of computation occurs on our server. The only file that must be run on the client machine is called main.py. The user must download main.py and in order to run this file, they must have pyhton installed on their machine. In addition to having python, the user must ensure that they have the "requests" python library installed. The user must also possess a file that they wish to have processed by our server and have it located in the same file as main.py. 
+Using the EOPbeta is straight forward and painless as the majority of computation occurs on our server. The only file that must be run on the client machine is called _main.py_. The user must download _main.py_ and in order to run this file, they must have pyhton installed on their machine. In addition to having python, the user must ensure that they have the "requests" python library installed. The user must also possess a file that they wish to have processed by our server and have it located in the same file as _main.py_. 
 
-__List of requirement__:
-* Pyhton
+__List of requirements__:
+* Pyhton 3
 * "Requests" python library
-* main.py
+* _main.py_
 * File to process
+
+### Functionality of main.py
+
+The majority of the EOPbeta functionality is located on our AWS Lightsail server, however, the _main.py_ program supplies users with a way to upload thier file to our server in order for the bulk of the processing to be done. When  run from the users terminal, _main.py_ will prompt the user to  
+
+
+
+
+
+
+
+[_main.py_]: https://github.com/csamcharles/EarthObservationPlatformBeta/blob/master/cli/main.py
