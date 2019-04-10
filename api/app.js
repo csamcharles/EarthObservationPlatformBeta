@@ -6,7 +6,7 @@ const app = express();
 
 app.use(fileUpload());
 
-const PORT = 8080;
+const PORT = 8000;
 
 app.post('/api/submit-alg', (req, res) => {
     if (Object.keys(req.files).length == 0) {
