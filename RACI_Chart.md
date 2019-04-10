@@ -13,6 +13,6 @@ Docker Configuration | A | C | R
 CI/CD Decisions | R | R | R
 Travis CI Implementation | R | I | I
 DevOps Documentation | R | R | C
-Evaluation of Design and Implementation | C | C | R
+Evaluation of Design and Implementation | I | C | R
 Future Work | R | R | R
 
