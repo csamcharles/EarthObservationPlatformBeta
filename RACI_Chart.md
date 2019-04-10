@@ -3,8 +3,8 @@ Team Name: Argonauts
 Group Members: Sam Charles, Conor Butte-Landsfried, Michael Baart
 
 **R = Resposible, A = Accountable, C = Consulted, I = Informed**
-Tasks | Sam | Conor | Michael 
---- | --- | ---
+| Tasks | Sam | Conor | Michael |
+| --- | --- | --- |
 Base Implementation | R | A | A
 Deployment | R | A | I
 AWS Configuration | C | R | I
