@@ -26,4 +26,4 @@ The majority of the EOPbeta functionality is located on our AWS Lightsail server
 
 
 
-[main.py]: https://github.com/csamcharles/EarthObservationPlatformBeta/blob/master/cli/main.py
+[_main.py_] https://github.com/csamcharles/EarthObservationPlatformBeta/blob/master/cli/main.py
