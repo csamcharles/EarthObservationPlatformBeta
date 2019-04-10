@@ -1,16 +1,15 @@
 import os.path
 import requests
 
-#To run with AWS lightsail, set to False
-local = False
+# To run with AWS lightsail, set to False
+debug = False
 
 # put the hosted endpoint here
-api_post = 'http://localhost:8080/api/submit-alg' if local else 'http://54.69.235.20:8000/api/submit-alg'
+api_post = 'http://localhost:8080/api/submit-alg' if debug else 'http://34.220.168.144:8000/api/submit-alg'
 
 print("Please enter the path to your algorithm: ")
 
-#file = input()
-path = 'test.txt'
+path = 'test.txt' if debug else input()
 
 if os.path.isfile(path):
     print("Sending your algorithm to the cloud...")
