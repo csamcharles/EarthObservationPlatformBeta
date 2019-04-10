@@ -77,6 +77,10 @@ With the combination of Mocha and Chai, we were able to implement assertions in 
 
 ## Docker
 
+<img src="https://www.docker.com/sites/default/files/social/docker_facebook_share.png" width="250" align="left"/> 
+
+
+
 
 
 
