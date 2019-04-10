@@ -4,7 +4,7 @@ import requests
 local = False
 
 # put the hosted endpoint here
-api_post = 'http://localhost:8080/api/submit-alg' if local else 'http://54.69.235.20:8080/api/submit-alg'
+api_post = 'http://localhost:8080/api/submit-alg' if local else 'http://54.69.235.20:8000/api/submit-alg'
 
 print("Please enter the path to your algorithm: ")
 
