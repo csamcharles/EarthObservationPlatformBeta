@@ -88,8 +88,17 @@ We feel that the AWS Lightsail platform will be able to handle our needs and mak
 
 ## Docker
 
-add docker info here
 <img src="https://www.docker.com/sites/default/files/social/docker_facebook_share.png" width="250" align="left"/> 
+
+[Docker](https://www.docker.com/) is a container service used to deploy production apps on any machine while preserving a specified environment. Docker works by spinning up an instance of a virtual machine for a single application, installing all the neccesary dependencies, and running the application. Docker is especially useful as it allows for easy scaling, as multiple instances of the same application can be created on the fly with minimal configuration. 
+
+This configuration is simple, and is done through [dockerfiles](https://docs.docker.com/engine/reference/builder/). A link to our docker configuration can be found [here](https://github.com/csamcharles/EarthObservationPlatformBeta/tree/master/dockerfiles).
+
+Docker is an important tool for code maintenance and code base evolution. As dependencies grow, the likely hood of error running in a different environment increases. Docker forces the developer to track dependencies, and to test their application in a fresh environment during development - as it would be in production. It is no wonder docker and other container technologies have taken the developing world by storm in recent years.
+
+Given the scope of our project, we only used docker to wrap the API, and not the command line interface. This allows some future proofing, for when we scale we will need multiple instances of the deployed cloud application running concurrently. 
+
+For now, users must still install python3 and the requests library in order to run the CLI. 
 
 
 
