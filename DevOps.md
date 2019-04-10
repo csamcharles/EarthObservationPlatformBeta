@@ -5,7 +5,7 @@ Group Members: Sam Charles, Conor Butte-Landsfried, Michael Baart
 *This document outlines the devOps tools used when creating the Earth Observation Plarform Beta and how these tools ease maintenance and evolution.*
 
 ## Travis CI
-[Travis CI] offers continuous integration and deployment for projects hosted on github ![](https://travis-ci.com/images/logos/Tessa-1.png =250x)
+[Travis CI] offers continuous integration and deployment for projects hosted on github ![](https://travis-ci.com/images/logos/Tessa-1.png =250x250)
 
 ## Github
 
