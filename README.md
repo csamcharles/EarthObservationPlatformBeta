@@ -11,4 +11,4 @@ More details can be found regarding the project in the documentation:
  - Evaluation of Design
  - Future work
  
- This project was made for SENG 371: Software Evolution for Yvonne Coady
+ This project was made for SENG 371: Software Evolution, taught by Yvonne Coady
