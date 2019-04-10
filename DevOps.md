@@ -2,7 +2,7 @@
 Team Name: Argonauts   
 Group Members: Sam Charles, Conor Butte-Landsfried, Michael Baart  
   
-* This document outlines the devOps tools used when creating the Earth Observation Plarform Beta and how these tools ease maintenance and evolution *
+*This document outlines the devOps tools used when creating the Earth Observation Plarform Beta and how these tools ease maintenance and evolution*
 
 ## Travis CI
 
