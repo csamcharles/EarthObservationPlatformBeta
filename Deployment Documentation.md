@@ -22,7 +22,15 @@ __List of requirements__:
 
 The majority of the EOPbeta functionality is located on our AWS Lightsail server, however, the _main.py_ program supplies users with a way to upload thier file to our server in order for the bulk of the processing to be done. The first step is to download _main.py_ and placae it in the same directory as the file the user wishes to process. When run from the users terminal, _main.py_ will prompt the user to enter the name of the file that they wish to upload to our server. If a valid file name is entered, the file will be sent to our AWS server to be processed. The reponse of the server is outputted to the console for the user to see (200, 404, 500, etc.). If, by chance, an incorrect file name is entered, the user will be informed by _main.py_ and the user will need to restart the program and enter a valid file name. 
 
+### Running the EOPbeta
 
+By following the steps below and ensuring all listed requirments are met, any user should be able to run the EOPbeta without issue.
+
+__Steps:__
+
+1. [Download](https://www.python.org/downloads/) Python 3
+2. [Download](https://realpython.com/python-requests/) "requests" python library
+3. [Download](https://github.com/csamcharles/EarthObservationPlatformBeta/blob/master/cli/main.py) _main.py_ from EOP repository on GitHub
 
 
 
