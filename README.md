@@ -7,6 +7,7 @@ The api server is deployed on aws, and the project is configured with travis CI 
 
 More details can be found regarding the project in the documentation:
  - RACI Chart
+ - [Deployment Documentation](Deployment Documentation.md)
  - DevOps
  - Evaluation of Design
  - Future work
