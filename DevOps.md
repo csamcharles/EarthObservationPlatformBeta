@@ -44,8 +44,34 @@ Once tests were working with `npm test` we were able to integrate the tests with
 
 To create meaningful tests however, we needed to test the API, and ensure that all the correct responses were returned in different testing scenarios. This is where *Chai* comes in to play.
 
-## Chai
-<img src="https://avatars2.githubusercontent.com/u/1515293?s=400&v=4" width="250" align="left"/>
+## Chai  
+
+<img src="https://avatars2.githubusercontent.com/u/1515293?s=400&v=4" width="250" align="left"/>   
+
+[Chai](https://www.chaijs.com/) is an assertion library that can be paired with any javascript testing framework. From our research (and now experience!) it works especially well with Mocha.   
+
+Chai has three main functions that are used while testing. These are the `should`, `expect`, and `assert` functions, and are useful for checking types, object parameters, values, and more.  
+
+Chai has an expressive approach to testing which makes it especially easy to pick up, which was important for our project since we needed to implement testing on a time budget, and had never worked with javascript testing frameworks before.   
+
+Below is an example of a unit test we used with chai to test that the server returned the correct error if a specified file was not included in the request: 
+
+```javascript
+chai.use(chaiHttp);
+
+describe('/POST algorithm', () => {
+    it('it should send the algorithm', (done) => {
+        chai.request(api)
+            .post('/api/submit-alg')
+            .end((err, res) => {
+                res.should.have.status(500);
+                done();
+            });
+    });
+});
+```
+
+With the combination of Mocha and Chai, we were able to implement assertions in the unit tests to confirm the responses from the API were complete and correct.    
 
 ## AWS LightSail
 
