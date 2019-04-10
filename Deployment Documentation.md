@@ -31,6 +31,14 @@ __Steps:__
 1. [Download](https://www.python.org/downloads/) Python 3
 2. [Download](https://realpython.com/python-requests/) "requests" python library
 3. [Download](https://github.com/csamcharles/EarthObservationPlatformBeta/blob/master/cli/main.py) _main.py_ from EOP repository on GitHub
+4. Create a directory with _main.py_ and the file you wish to have processed in it
+5. Run _main.py_ from your command line
+6. Enter the file name when prompted
+7. Examine response from server to verify that the file was processed correctly
+
+
+#####The Argonauts hope you enjoy your experince using the EOPbeta and we look forward to revceiving feedback from our users
+_It is important to note that this is still in beta and lacks processing functionality._
 
 
 
