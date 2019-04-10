@@ -1,4 +1,6 @@
 # Deployment Documentation
+Team Name: Argonauts   
+Group Members: Sam Charles, Conor Butte-Landsfried, Michael Baart
 
 _This document will cover provide an outline on how to use the Earth Observation Platform Beta effectively and error free._
 
