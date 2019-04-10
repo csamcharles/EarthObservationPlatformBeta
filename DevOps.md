@@ -88,6 +88,7 @@ We feel that the AWS Lightsail platform will be able to handle our needs and mak
 
 ## Docker
 
+add docker info here
 <img src="https://www.docker.com/sites/default/files/social/docker_facebook_share.png" width="250" align="left"/> 
 
 
