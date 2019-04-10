@@ -73,6 +73,9 @@ describe('/POST algorithm', () => {
 With the combination of Mocha and Chai, we were able to implement assertions in the unit tests to confirm the responses from the API were complete and correct.   
 
 ## AWS LightSail
+
+<img src="https://cdn.freebiesupply.com/logos/large/2x/amazon-lightsail-logo-png-transparent.png" width="250" align="right"/> 
+
 [AWS Lightsail](https://aws.amazon.com/lightsail/) is an easy to use cloud platform that allows for virtual private servers to be created. It allows for users to take advantage of features such as load balancing, while keeping things simple. 
 
 In the EOPbeta, we chose to use AWS Lightsail because of its simplicity. It allows us to easily manage our server and make adjustments without hassle. The platform also allows us to view a variety of live metrics such as CPU usage, data flowing in and out of our server and several others. AWS Lightsail also gives us the ab
