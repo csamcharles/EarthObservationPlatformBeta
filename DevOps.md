@@ -40,7 +40,7 @@ Taken from their website:
 >Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing *simple* and *fun*.      
 and it is! We started by creating a simple test following [this](https://mochajs.org/#getting-started) getting started guide from Mocha.   
 
-Once tests were working with `npm test` we were able to integrate the tests with Travis CI to be run with every push to the repository. This was as simple as configuring the language in the travis yaml configuration file to Node js.  
+Once tests were working with `npm test` we were able to integrate the tests with Travis CI to be run with every push to the repository. This was as simple as configuring the language in the travis yaml configuration file to `node_js`.  
 
 To create meaningful tests however, we needed to test the API, and ensure that all the correct responses were returned in different testing scenarios. This is where *Chai* comes in to play.
 
@@ -78,13 +78,13 @@ With the combination of Mocha and Chai, we were able to implement assertions in 
 
 [AWS Lightsail](https://aws.amazon.com/lightsail/) is an easy to use cloud platform that allows for virtual private servers to be created. It allows for users to take advantage of features such as load balancing, while keeping things simple. 
 
-In the EOPbeta, we chose to use AWS Lightsail because of its simplicity. It allows us to easily manage our server and make adjustments without hassle. The platform also allows us to view a variety of live metrics such as CPU usage, data flowing in and out of our server and several others. AWS Lightsail also gives us the ab
+In the EOPbeta, we chose to use AWS Lightsail because of its simplicity. It allows us to easily manage our server and make adjustments without hassle. The platform also allows us to view a variety of live metrics such as CPU usage, data flowing in and out of our server and several others.
 
 Additionally, when setting up our server on Lightsail, we were able choose from a variety of different blueprints for our Lightsail instance. We used the Node.js blueprint running on a Linux platform, which worked very well for us as our server is written in Node.js. This allowed for a very smooth transition from a local server to a server hosted on the Lightsail instance.
 
 Two other draws for us when considering Lightsail were it's ability to apply load balancing and its built in SSH client. The ability to incorperate load balancing into an application like the EOPbeta is crutial. The application will need to be scaled and will require addtional resources when more users start to use the program. The other feature that we found very useful is the built in SSH client. This allows us to access our Linux instance a the click of a button, leading to changes being quick and painless.
 
-We feel that the AWS Lightsail platform will be able to handle our needs and makes scaling up the application issue free. The current instance being used does have a small amounnt of storage and memory as that is all that is required for testing, however addtional resources can be easily added. In the far future we may need to switch the more complex EC2 that allows for customization and more power, however this will not occur until the EOP reaches a very large audience.
+We feel that the AWS Lightsail platform will be able to handle our needs and makes scaling up the application issue free. The current instance being used does have a small amount of storage and memory as that is all that is required for testing, however addtional resources can be easily added. In the far future we may need to switch the more complex EC2 that allows for customization and more power, however this will not occur until the EOP reaches a very large audience.
 
 ## Docker
 
