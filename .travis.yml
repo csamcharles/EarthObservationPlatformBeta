@@ -3,4 +3,5 @@ node_js:
   - "node"
 
 before_install:
+  - cd /api
   - npm i -g
