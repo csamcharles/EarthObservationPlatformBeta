@@ -16,11 +16,36 @@ Since this implementation is a beta test, our mocha tests are limited, and curre
 Travis also lets us deploy to AWS for production, and when are project would reach that stage, this change can be made easily with a few changes to the Travis [yaml](https://github.com/csamcharles/EarthObservationPlatformBeta/blob/master/.travis.yml) file. More on constructing yaml files can be found [here](https://docs.travis-ci.com/user/customizing-the-build).
 
 
-## Github
-![image alt <](https://image.flaticon.com/icons/svg/25/25231.svg)
-Even though github it one of the most commonly used tools (so much that it almost doesn't feel like it), it is still one of the most powerful DevOps tools around. Git hub allows for excellent file tracking, revision history, conflict resolution, and project storage and hosting. 
+## Github  
 
-## Mocha
+<img src="https://image.flaticon.com/icons/svg/25/25231.svg" width="250" align="left"/>  
+
+Even though github it one of the most commonly used tools (so much that it almost doesn't feel like it), it is still one of the most powerful DevOps tools around. Git hub allows for excellent file tracking, revision history, conflict resolution, and project storage and hosting.  
+
+For the implementation of our Earth Observation Platform Beta, we use Github to track all changes to the code base, both for our [Node.js express API](https://github.com/csamcharles/EarthObservationPlatformBeta/tree/master/api) as well as the [python command line interface](https://github.com/csamcharles/EarthObservationPlatformBeta/tree/master/cli).  
+
+Github also serves as a useful outward facing host for documentation regarding this project, such as this markdown file you are currently reading.   
+
+Having clear and up to date documentation is critical for maintaining good code over the development life cycle, such that any new developers can get quickly up to speed, and all implementation and design choices are recorded and justified. This way, if something is changed down the road, it is easy to go back and track why things were the way they were prior to the change.
+
+## Mocha  
+
+<img src="https://images.opencollective.com/proxy/images?src=https%3A%2F%2Fopencollective-production.s3-us-west-1.amazonaws.com%2Fc645f600-20c5-11e8-9fc9-47523ab65bdd.png&height=640" width="250" align="right"/>    
+
+Testing is an integral part of development and maintenance of a code base. Good tests should evolve with the growth of the project, and be treated with the same importance as the development of new features and patches. For this project, we decided to implement unit testing with the [Mocha](https://mochajs.org/) javaScript testing framework.    
+
+Taken from their website: 
+
+>Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing *simple* and *fun*.      
+
+and it is! We started by creating a simple test following [this](https://mochajs.org/#getting-started) getting started guide from Mocha.   
+
+Once tests were working with `npm test` we were able to integrate the tests with Travis CI to be run with every push to the repository. This was as simple as configuring the language in the travis yaml configuration file to Node js.  
+
+To create meaningful tests however, we needed to test the API, and ensure that all the correct responses were returned in different testing scenarios. This is where *Chai* comes in to play.
+
+## Chai
+<img src="https://avatars2.githubusercontent.com/u/1515293?s=400&v=4" width="250" align="left"/>
 
 ## AWS LightSail
 
