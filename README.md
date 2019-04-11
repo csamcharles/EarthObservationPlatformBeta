@@ -1,6 +1,7 @@
 # EarthObservationPlatformBeta   
 Team Name: Argonauts   
-Group Members: Sam Charles, Conor Butte-Landsfried, Michael Baart
+Group Members: Sam Charles, Conor Butte-Landsfried, Michael Baart  
+
 *A proof of concept for an cloud-based Earth Observation Platform (EOP). The EOP is designed to allow researchers to implement their own algorithm on a large data set using a network of distributed systems hosted on the cloud.*
 
 In this repository you will find the source code for the python command line interface, the source code for the api server and the tests, the travis yaml file, and the docker configuration files.
