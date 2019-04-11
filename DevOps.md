@@ -2,7 +2,7 @@
 Team Name: Argonauts   
 Group Members: Sam Charles, Conor Butte-Landsfried, Michael Baart  
   
-*This document outlines the devOps tools used when creating the Earth Observation Plarform Beta and how these tools ease maintenance and evolution.*
+*This document outlines the devOps tools used when creating the Earth Observation Platform Beta and how these tools ease maintenance and evolution.*
 
 ## Travis CI 
 
@@ -10,7 +10,7 @@ Group Members: Sam Charles, Conor Butte-Landsfried, Michael Baart
 
 [Travis CI] offers continuous integration and deployment for projects hosted on github. Configuration is notably simple, with the steps for integration with an existing project outlined [here](https://docs.travis-ci.com/user/tutorial/).   
 
-With the Earth Observation Platform, we integrated Travis CI in order to run our Mocha testing (for testing the API) on every push. Travis has an awesome UI that shows the tests running in realtime, and notifies you upon completion. If a new commit breaks a test, then we can fix the code before it is merged into the main code base, catching bugs before they can cause unexpected problems later down the road.  
+With the Earth Observation Platform, we integrated Travis CI in order to run our Mocha testing (for testing the API) on every push. Travis has an awesome UI that shows the tests running in real time, and notifies you upon completion. If a new commit breaks a test, then we can fix the code before it is merged into the main code base, catching bugs before they can cause unexpected problems later down the road.  
 
 Since this implementation is a beta test, our mocha tests are limited, and currently travis CI only needs to run one test. Although this is trivial, as the project grows and more tests are added, this auto-testing integration will be extremely useful.  
 
@@ -83,17 +83,17 @@ In the EOPbeta, we chose to use AWS Lightsail because of its simplicity. It allo
 
 Additionally, when setting up our server on Lightsail, we were able choose from a variety of different blueprints for our Lightsail instance. We used the Node.js blueprint running on a Linux platform, which worked very well for us as our server is written in Node.js. This allowed for a very smooth transition from a local server to a server hosted on the Lightsail instance.
 
-Two other draws for us when considering Lightsail were it's ability to apply load balancing and its built in SSH client. The ability to incorperate load balancing into an application like the EOPbeta is crutial. The application will need to be scaled and will require addtional resources when more users start to use the program. The other feature that we found very useful is the built in SSH client. This allows us to access our Linux instance a the click of a button, leading to changes being quick and painless.
+Two other draws for us when considering Lightsail were its ability to apply load balancing and its built in SSH client. The ability to incorporate load balancing into an application like the EOPbeta is crucial. The application will need to be scaled and will require additional resources when more users start to use the program. The other feature that we found very useful is the built in SSH client. This allows us to access our Linux instance a the click of a button, leading to changes being quick and painless.
 
 ## Docker
 
 <img src="https://www.docker.com/sites/default/files/social/docker_facebook_share.png" width="250" align="left"/> 
 
-[Docker](https://www.docker.com/) is a container service used to deploy production apps on any machine while preserving a specified environment. Docker works by spinning up an instance of a virtual machine for a single application, installing all the neccesary dependencies, and running the application. Docker is especially useful as it allows for easy scaling, as multiple instances of the same application can be created on the fly with minimal configuration. 
+[Docker](https://www.docker.com/) is a container service used to deploy production apps on any machine while preserving a specified environment. Docker works by spinning up an instance of a virtual machine for a single application, installing all the necessary dependencies, and running the application. Docker is especially useful as it allows for easy scaling, as multiple instances of the same application can be created on the fly with minimal configuration. 
 
 This configuration is simple, and is done through [dockerfiles](https://docs.docker.com/engine/reference/builder/). A link to our docker configuration can be found [here](https://github.com/csamcharles/EarthObservationPlatformBeta/tree/master/dockerfiles).
 
-Docker is an important tool for code maintenance and code base evolution. As dependencies grow, the likely hood of error running in a different environment increases. Docker forces the developer to track dependencies, and to test their application in a fresh environment during development - as it would be in production. It is no wonder docker and other container technologies have taken the developing world by storm in recent years.
+Docker is an important tool for code maintenance and code base evolution. As dependencies grow, the likelihood of error running in a different environment increases. Docker forces the developer to track dependencies, and to test their application in a fresh environment during development - as it would be in production. It is no wonder docker and other container technologies have taken the developing world by storm in recent years.
 
 Given the scope of our project, we only used docker to wrap the API, and not the command line interface. This allows some future proofing, for when we scale we will need multiple instances of the deployed cloud application running concurrently. 
 
@@ -106,4 +106,3 @@ For now, users must still install python3 and the requests library in order to r
 
 
 [Travis CI]: https://travis-ci.org/
-
