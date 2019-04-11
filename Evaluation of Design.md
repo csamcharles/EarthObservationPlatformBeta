@@ -9,8 +9,10 @@ Modular, cloud based, scalable vs. non-distributed, low computation speed
 ## Tools
 ### Production
  - aws, docker
+ 
 Mature and wel documented tools. Simplifies deployment and is easily scalable
 ### DevOps
  - travis, mocha, chai
+ 
 Make managing a continually evolvin system much more easy
  
