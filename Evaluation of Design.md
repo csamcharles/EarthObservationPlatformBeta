@@ -12,8 +12,7 @@ Our design boasts a modular, distributed system offering high computation power 
 
 ## System Implementation
 ### Libraries
- - requests, express, chai
- 
+Our system leverages specific libraries to aid in operations and deployment. We implemented our command line interface in python as it is light weight and interpretable language, along with the [Requests](http://docs.python-requests.org/en/master/) library to effectively communicate with our API server. This leads into our API which we decided to write in JavaScript using [Node.js](https://nodejs.org/en/) and the [Express.js framework](https://expressjs.com/). Lastly, to stream line deployment and integration, weve automated testing usign the [Chai.js](https://www.chaijs.com/) library to handle assertions and implement a test suite. All these libraries are well supported by the community and offer strong documentation and example code. 
 ### Tools
 #### Production
  - aws, docker
