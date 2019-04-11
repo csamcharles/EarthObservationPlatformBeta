@@ -9,6 +9,7 @@ api_post = 'http://localhost:8080/api/submit-alg' if debug else 'http://54.201.1
 
 print("Please enter the path to your algorithm: ")
 
+# debug for testing
 path = 'test.txt' if debug else input()
 
 if os.path.isfile(path):
